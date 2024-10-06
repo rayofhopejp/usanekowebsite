@@ -22,8 +22,8 @@ export default function Home() {
     <>
       <header>
         <Scroll className="transition left-0 bg-primary text-primary-content absolute p-3 m-3 -translate-y-16 focus:translate-y-0" to="main-contents" smooth={true} offset={-50}>Skip to main contents</Scroll>
-        <nav className="z-30 fixed left-0 top-0 flex justify-between items-start p-4 xl:font-bold">
-          <Scroll to="home" smooth={true} offset={-50} className="cursor-pointer w-2/3 xl:w-1/4"><Image
+        <nav className="z-30 fixed left-0 top-0 flex justify-between items-start p-4 xl:font-bold pointer-events-none">
+          <Scroll to="home" smooth={true} offset={-50} className="cursor-pointer w-2/3 xl:w-1/4 pointer-events-auto"><Image
             src="/others/logo.webp"
             alt="Usaneko Logo"
             width={1016}
@@ -32,14 +32,14 @@ export default function Home() {
             priority
           /></Scroll>
           <div className="flex ms-auto">
-            <div className="text-stone-900 hidden xl:flex text-base">
+            <div className="text-stone-900 hidden xl:flex text-base pointer-events-auto">
               <Scroll to="about" smooth={true} offset={-50} className="ps-10 pe-8 py-4 rounded-s-full border-white border-s-2 border-y-2 bg-white bg-opacity-75 cursor-pointer hover:text-white hover:bg-rose-500 hover:bg-opacity-75">About</Scroll>
               <Scroll to="videos" smooth={true} offset={-50} className="px-8 py-4 border-white border-y-2 bg-white bg-opacity-75 cursor-pointer hover:text-white hover:bg-rose-500 hover:bg-opacity-75">Videos</Scroll>
               <Scroll to="link" smooth={true} offset={-50} className="px-8 py-4 border-white border-y-2 bg-white bg-opacity-75 cursor-pointer hover:text-white hover:bg-rose-500 hover:bg-opacity-75">Link</Scroll>
               <Scroll to="history" smooth={true} offset={-50} className="px-8 py-4 border-white border-y-2 bg-white bg-opacity-75 cursor-pointer hover:text-white hover:bg-rose-500 hover:bg-opacity-75">History</Scroll>
               <Scroll to="guideline" smooth={true} offset={-50} className="ps-8 pe-10 py-4 rounded-e-full border-white border-e-2 border-y-2 bg-white bg-opacity-75 cursor-pointer hover:text-white hover:bg-rose-500 hover:bg-opacity-75">Guideline</Scroll>
             </div>
-            <div className="ms-6 flex text-stone-900 text-xs xl:text-base">
+            <div className="ms-6 flex text-stone-900 text-xs xl:text-base pointer-events-auto">
               <button type="button" className="ps-3 pe-2 py-1 xl:ps-5 xl:pe-3 xl:py-4 rounded-s-full border-white border-s-2 border-y-2 cursor-pointer text-white bg-rose-500 bg-opacity-75">JP</button>
               <button type="button" className="ps-2 pe-3 py-1 xl:ps-3 xl:pe-5 xl:py-4 rounded-e-full border-white border-e-2 border-y-2 bg-white bg-opacity-75 cursor-pointer hover:text-white hover:bg-rose-500 hover:bg-opacity-75">EN</button>
             </div>
